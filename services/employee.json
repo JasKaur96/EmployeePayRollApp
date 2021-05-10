@@ -1,0 +1,146 @@
+{
+  "employee": [
+    {
+      "_name": "Sara",
+      "_profilePic": "../Assets/profile-images/Ellipse -7.png",
+      "_gender": "Female",
+      "_department": [
+        "HR",
+        "Admin"
+      ],
+      "_salary": "500000",
+      "_startDate": "2019-07-18T18:30:00.000Z",
+      "_notes": "test",
+      "id": 10
+    },
+    {
+      "_name": "Jack",
+      "_profilePic": "../Assets/profile-images/Ellipse -2.png",
+      "_gender": "Male",
+      "_department": [
+        "Marketing&Sales"
+      ],
+      "_salary": "353000",
+      "_startDate": "2019-06-19T18:30:00.000Z",
+      "_notes": "jhfdhg",
+      "id": 11
+    },
+    {
+      "_name": "Sanket",
+      "_profilePic": "../Assets/profile-images/Ellipse -3.png",
+      "_gender": "Male",
+      "_department": [
+        "Marketing&Sales",
+        "Finance"
+      ],
+      "_salary": "336000",
+      "_startDate": "2017-10-15T18:30:00.000Z",
+      "_notes": "zdfsgg",
+      "id": 12
+    },
+    {
+      "_name": "Jill",
+      "_profilePic": "../Assets/profile-images/Ellipse -3.png",
+      "_gender": "Male",
+      "_department": [
+        "HR",
+        "Marketing&Sales"
+      ],
+      "_salary": "500000",
+      "_startDate": "2021-04-16T18:30:00.000Z",
+      "_notes": "dsfsafafgd",
+      "id": 13
+    },
+    {
+      "_name": "Rohman",
+      "_profilePic": "../Assets/profile-images/Ellipse -2.png",
+      "_gender": "Male",
+      "_department": [
+        "Marketing&Sales",
+        "Finance"
+      ],
+      "_salary": "447000",
+      "_startDate": "2020-05-03T18:30:00.000Z",
+      "_notes": "dfsgsgsf",
+      "id": 14
+    },
+    {
+      "_name": "Manav",
+      "_profilePic": "../Assets/profile-images/Ellipse -3.png",
+      "_gender": "Male",
+      "_department": [
+        "HR",
+        "Marketing&Sales"
+      ],
+      "_salary": "435000",
+      "_startDate": "2017-04-10T18:30:00.000Z",
+      "_notes": "test",
+      "id": 15
+    },
+    {
+      "_name": "Ashi",
+      "_profilePic": "../Assets/profile-images/Ellipse 1.png",
+      "_gender": "Female",
+      "_department": [
+        "Finance",
+        "Admin"
+      ],
+      "_salary": "487000",
+      "_startDate": "2018-10-15T18:30:00.000Z",
+      "_notes": "test",
+      "id": 16
+    },
+    {
+      "_name": "Neha",
+      "_profilePic": "../Assets/profile-images/Ellipse 1.png",
+      "_gender": "Female",
+      "_department": [
+        "Marketing&Sales",
+        "Finance"
+      ],
+      "_salary": "491000",
+      "_startDate": "2019-03-31T18:30:00.000Z",
+      "_notes": "test",
+      "id": 17
+    },
+    {
+      "_name": "Mayank",
+      "_profilePic": "../Assets/profile-images/Ellipse -3.png",
+      "_gender": "Male",
+      "_department": [
+        "HR"
+      ],
+      "_salary": "400000",
+      "_startDate": "2020-12-31T18:30:00.000Z",
+      "_notes": "test",
+      "id": 18
+    },
+    {
+      "_name": "Adajdfnkdgjn",
+      "_profilePic": "../Assets/profile-images/Ellipse -7.png",
+      "_department": [],
+      "_salary": "400000",
+      "_startDate": "2020-12-31T18:30:00.000Z",
+      "_notes": "",
+      "id": 19
+    },
+    {
+      "_name": "Adajdfnkdgjn",
+      "_profilePic": "../Assets/profile-images/Ellipse -7.png",
+      "_department": [],
+      "_salary": "400000",
+      "_startDate": "2020-12-31T18:30:00.000Z",
+      "_notes": "",
+      "id": 20
+    },
+    {
+      "_name": "Adajdfnkdgjn",
+      "_profilePic": "../Assets/profile-images/Ellipse -7.png",
+      "_department": [],
+      "_salary": "400000",
+      "_startDate": "2020-12-31T18:30:00.000Z",
+      "_notes": "",
+      "id": 21
+    }
+  ]
+}

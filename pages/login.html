@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/login.css">     
+    <script src="../js/login.js"></script>   
+    <script src="../js/utility.js"></script>
+    <script src="../js/site-properties.js"></script>
+    <script src="../services/jsScripts/http_services.js"></script>
+</head>
+<body>
+    <form onsubmit="save()" method="POST">
+        <header class="headerContainer"><h2>LOGIN</h2></header>
+        <div>
+            <label>PhoneNo.: </label>
+            <input type="text" id="userId" name="userId" placeholder="Enter Phone No.">
+            <error-output class="userId-error"> </error-output>
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span><i class="fas fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i></span>
+            <error-output class="password-error"> </error-output>
+        </div>    
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

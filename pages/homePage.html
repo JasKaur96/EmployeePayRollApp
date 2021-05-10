@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+        integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+        crossorigin="anonymous"> </script>
+    <title>Employee Payroll App</title>
+</head>
+ 
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../Assets/images/logo.png" alt="Logo">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+                <span class="emp-text emp-system">SYSTEM</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details: <div class="emp-count">10</div>
+            </div>
+            <a href="./employeePayroll.html" class="add-button"><img src="../Assets/icons/add-24px.svg"
+                    alt="Add Employee">Add user</a>
+        </div>
+
+        <div class="table-main">
+            <table id="table-display" class="table"></table>
+        </div>
+    </div>
+    <script src="../js/homePage.js"></script>
+    <script src="../js/utility.js"></script>
+    <script src="../js/site-properties.js"></script>
+    <script src="../services/jsScripts/http_services.js"></script>
+</body>
+
+</html>
