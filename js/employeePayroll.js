@@ -292,7 +292,9 @@ const setTextValue = (id, value) => {
 //         });
 // }
 function createServer() {
-    
+    const token = localStorage.getItem('SetToken');
+    isToken = token ? true : false;
+    if(isToken){
     let methodURL = site_properties.json_host_server+"register";
     let methodCall = "POST";
     if (isUpdate) {
@@ -310,12 +312,15 @@ function createServer() {
             // resetForm();
             // window.location.replace(site_properties.home_page);
         });
-    
+    }else{
+        console.log("Unauthorized user")
+        window.location.replace(site_properties.login_page);
+    }
 }
 
 function updateServer() {
     
-    let methodURL = site_properties.json_host_server +"register/"+dataEmp.data._id;
+    let methodURL = site_properties.json_host_server +"updateEMp/"+dataEmp.data._id;
     let methodCall = "PUT";
     
     console.log(methodURL);

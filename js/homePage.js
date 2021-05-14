@@ -1,7 +1,8 @@
 let empPayrollList = new Array();
-
+let token;
 window.addEventListener("DOMContentLoaded", (event) => {
-    
+    token = localStorage.getItem("Token");
+    console.log(token);
     if (site_properties.from_local) getEmpDataFromLocalStorage();
     // else getEmpDataFromJSONServer();
     else getEmpDataServer();
@@ -12,6 +13,16 @@ function getEmpDataFromLocalStorage() {
         JSON.parse(localStorage.getItem("EmployeePayrollList")) : [];
         console.log(empPayrollList)
     processLocalStorageResponse()
+
+};
+
+
+function getTokenStorage() {
+    token = localStorage.getItem("SetToken") ?
+        JSON.parse(localStorage.getItem("SetToken")) : [];
+        console.log(token)
+    processLocalStorageResponse()
+    
 };
 
 // function getEmpDataFromJSONServer() {
@@ -28,7 +39,7 @@ function getEmpDataFromLocalStorage() {
 // }
 
 function getEmpDataServer(){
-    let getURL = site_properties.json_host_server+"register";
+    let getURL = site_properties.json_host_server+"findAll";
     console.log(getURL);
     makePromiseCall("GET",getURL, true).then(responseText => {
         empPayrollList = responseText;
@@ -119,7 +130,7 @@ function remove(node) {
         document.querySelector(".emp-count").textContent = empPayrollList.length;
         createInnerHTML();
     } else {
-        let delURL = site_properties.json_host_server +"register/"+ node.id;
+        let delURL = site_properties.json_host_server +"deleteEmp/"+ node.id;
         console.log(delURL)
         makePromiseCall("DELETE", delURL, false)
             .then(responseText => {
@@ -138,7 +149,7 @@ function update(node) {
     console.log("NOde in update",node.id)
     let emp;
     
-    let getURL = site_properties.json_host_server+"register/"+node.id;
+    let getURL = site_properties.json_host_server+"findOne/"+node.id;
     console.log(getURL);
     makePromiseCall("GET",getURL, true).then(responseText => {
        empPayrollList = responseText;

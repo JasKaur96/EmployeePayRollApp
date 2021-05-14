@@ -27,7 +27,12 @@ function makePromiseCall(methodType, url, async = true, data) {
         if (data) {
             console.log(JSON.stringify(data));
             const empData = JSON.stringify(data)
+            let token = localStorage.getItem('Token');
+            
             xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.setRequestHeader("Authorization","Bearer"+ token);
+
+            console.log("Token Http",localStorage.getItem('Token'))            
             console.log("Sent The data",JSON.stringify(data));
             xhr.send(empData)
         } else xhr.send();
